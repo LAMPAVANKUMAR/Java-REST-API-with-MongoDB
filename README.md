@@ -21,11 +21,11 @@ To implement the REST API in Java with MongoDB database, we need to use a framew
 
 Steps to implement the application:
 
-Create a new Spring Boot project using Spring Initializr.
-Add the required dependencies for MongoDB and Spring Web in the pom.xml file.
-Create a MongoDB configuration class to connect to the database.
-Create a Server model class with fields like name, id, language, and framework.
-Create a ServerRepository interface that extends MongoRepository<Server, String> to perform database operations.
-Create a ServerService class to implement the business logic for searching, creating, and deleting server objects.
-Create a REST API controller with endpoints for GET, PUT, and DELETE operations on server objects.
-Test the API using Postman or any other HTTP client.
+1. Create a new Spring Boot project using Spring Initializr.
+2. Add the required dependencies for MongoDB and Spring Web in the pom.xml file.
+3. Create a MongoDB configuration class to connect to the database.
+4. Create a Server model class with fields like name, id, language, and framework.
+5. Create a ServerRepository interface that extends MongoRepository<Server, String> to perform database operations.
+6. Create a ServerService class to implement the business logic for searching, creating, and deleting server objects.
+7. Create a REST API controller with endpoints for GET, PUT, and DELETE operations on server objects.
+8. Test the API using Postman or any other HTTP client.
