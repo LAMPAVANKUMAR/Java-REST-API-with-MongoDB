@@ -17,6 +17,10 @@ contains this string and return one or more servers found. Return 404 if nothing
 Be sure that you can show how your application responds to requests using postman, curl or
 any other HTTP client.
 
+
+
+
+
 To implement the REST API in Java with MongoDB database, we need to use a framework that supports both. Here, we will use Spring Boot framework, which has in-built support for RESTful web services and MongoDB.
 
 Steps to implement the application:
