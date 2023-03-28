@@ -17,15 +17,15 @@ contains this string and return one or more servers found. Return 404 if nothing
 Be sure that you can show how your application responds to requests using postman, curl or
 any other HTTP client.
 
-Sure, here's a sample implementation in Java using the Spring Boot framework and MongoDB for storing the data:
+To implement the REST API in Java with MongoDB database, we need to use a framework that supports both. Here, we will use Spring Boot framework, which has in-built support for RESTful web services and MongoDB.
 
-1. First, we need to set up the project with the necessary dependencies. We'll use Maven as our build tool, so we'll add the following dependencies to the    pom.xml file:
+Steps to implement the application:
 
-2. Next, we'll define the Server model class to represent our server objects:
-3. Now we'll define the ServerRepository interface that extends MongoRepository to provide basic CRUD operations for our Server objects:
-4. With our model and repository in place, we can now define the REST endpoints for our API:
-5. Finally, we'll set up the MongoDB connection by adding the following properties to the application.properties file:
-
-This assumes that you have MongoDB running on the default port and that you've created a database named "server-manager".
-
-With these steps complete, you should be able to run the application and use Postman, curl, or any other HTTP client to interact with the REST API
+Create a new Spring Boot project using Spring Initializr.
+Add the required dependencies for MongoDB and Spring Web in the pom.xml file.
+Create a MongoDB configuration class to connect to the database.
+Create a Server model class with fields like name, id, language, and framework.
+Create a ServerRepository interface that extends MongoRepository<Server, String> to perform database operations.
+Create a ServerService class to implement the business logic for searching, creating, and deleting server objects.
+Create a REST API controller with endpoints for GET, PUT, and DELETE operations on server objects.
+Test the API using Postman or any other HTTP client.
